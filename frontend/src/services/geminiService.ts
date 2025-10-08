@@ -10,7 +10,7 @@ export async function generateBiasAudit(dataset: string, attributes: string[]) {
       "recommendations": [...]
     }
   `;
-  const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key="AIzaSyB0kbECEHbFPS7rsHOnDKkwVIT0R9t_290", {
+  const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key="AIzaSyB0kbECEHbFPS7rsHOnDKkwVIT0R9t_290"", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
